@@ -1,0 +1,45 @@
+p {
+    font-family: Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.title-text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    width: 300px;
+    margin-bottom: 2px;
+}
+
+.time-text {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 16px;
+}
+.creator-text {
+    font-size: 14px;
+    color: #606060;
+    margin-bottom: 16px;
+}
+.discription-text{
+    color: #606060;
+    font-size: 14px;
+    width: 270px;
+    line-height: 22px;
+    margin-bottom: 200px;
+}
+.bottom-text{
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: #e34140;
+    color: white;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.shop-text {
+    cursor: pointer;
+}
+.shop-text:hover {
+    text-decoration: underline;
+}

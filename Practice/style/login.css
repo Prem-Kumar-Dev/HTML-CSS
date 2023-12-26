@@ -1,0 +1,156 @@
+body {
+    background-color: orange;
+    padding-bottom: 1000px;
+}
+
+.container {
+    background-color: rgb(255, 181, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+        left: 200px;
+        right: 200px;
+        top: 50px;
+        bottom: 50px;
+}
+
+.sign-in {
+    background-color: white;
+    position: absolute;
+        top:-30px;
+        left: -10px;
+        width: 55%;
+        bottom: -30px;
+    box-shadow: 3px 3px 15px 1px  rgba(0, 0, 0, 0.5);
+    opacity: 1;
+
+}
+.sign-in-elements ,
+.sign-up-elements {
+    display: block;
+    position: relative;
+        top: 25%;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+    font-family: Roboto,Arial;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+
+}
+
+.sign-in-elements-signin,
+.sign-up-elements-signin {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.sign-in-textbox,
+.sign-up-textbox {
+    margin: auto;
+    height: 30px;
+    width: 75%;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+
+.sign-in-textbox::placeholder,
+.sign-up-textbox::placeholder {
+    color:rgb(169, 169, 169);
+    font-family: Roboto,Arial;
+    font-weight: 425;
+}
+
+.sign-in-button,
+.sign-up-button {
+    margin-top: 20px;
+    margin-left: 11.15%;
+    font-size: 15px;
+    padding: 7.5px 15px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+}
+.forgot-pass-button{
+    margin-top: 20px;
+    margin-left: 11.15%;
+    color: gray;
+    font-size: 15px;
+    font-weight: 425;
+    margin-right: 160px;
+}
+
+
+.account-pref-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+        left: 30px;
+    font-family: Roboto,Arial;
+    font-size: 20px;
+    
+
+}
+.login-button {
+    background-color:white;
+    color: orange;
+    font-family: Roboto,Arial;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid orange;
+    border-radius: 8px;
+}
+
+.account-pref-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+        right: 60px;
+    font-family: Roboto,Arial;
+    font-size: 20px;
+    
+}
+
+.register-button {
+    background-color:white;
+    color: orange;
+    font-family: Roboto,Arial;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    border: 3px solid orange;
+    border-radius: 8px;
+}
+
+
+.sign-up {
+    background-color: white;
+    position: absolute;
+        top:-30px;
+        right: -10px;
+        width: 55%;
+        bottom: -30px;
+    box-shadow: 3px 3px 15px 1px  rgba(0, 0, 0, 0.5);
+    opacity: 0;
+
+}

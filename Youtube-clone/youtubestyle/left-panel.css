@@ -1,0 +1,36 @@
+.left-panel {
+    position: fixed;
+        top:57px;
+        left: 0px;
+        width: 72px;
+        bottom: 0px;
+    background-color: white;
+    align-items: center;
+    z-index: 11;
+}
+
+.left-panel-link {
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-panel-link:hover {
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+}
+
+.left-panel-link img {
+    width: 24px;
+    margin: 5px;
+}
+
+
+.left-panel-link p{
+    font-family: Roboto, Arial;
+    font-size: 10px;
+
+}
+
