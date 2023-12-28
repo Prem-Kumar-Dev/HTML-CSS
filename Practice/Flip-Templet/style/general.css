@@ -190,20 +190,20 @@ body {
 .watermark1,
 .watermark2 {
     width: 20%;
-    opacity: 0.75;
+    opacity: 0.25;
 }
 
 .watermark1 {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .watermark2 {
     padding-top: 4px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .qr-box {
-    opacity: 1;
+    opacity: 0.75;
     position: absolute;
     display: flex;
     justify-content: center;
