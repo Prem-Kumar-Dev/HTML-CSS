@@ -10,6 +10,7 @@ body {
 .container {
     width: 350px;
     height: 400px;
+    perspective: 1250px;
 }
 
 .card {
@@ -19,8 +20,9 @@ body {
     border-radius: 24px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     transform-style: preserve-3d;
-    transition: all 0.75s ease;
+    transition: all 0.5s ease;
     background-color: white;
+
 }
 
 .container:hover>.card {
@@ -180,14 +182,36 @@ body {
     width: 100%;
     height: 81.5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
 
-.watermark {
-    width: 75%;
-    opacity: 0.05;
+.watermark1,
+.watermark2 {
+    width: 20%;
+    opacity: 0.75;
+}
+
+.watermark1 {
+    padding-left: 20px;
+}
+
+.watermark2 {
+    padding-top: 4px;
+    padding-right: 20px;
+}
+
+.qr-box {
+    opacity: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code {
+    width: 60%;
 }
 
 .back-down {
