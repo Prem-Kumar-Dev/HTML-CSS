@@ -1,0 +1,243 @@
+body {
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+    padding-bottom: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 350px;
+    height: 400px;
+    perspective: 1250px;
+}
+
+.card {
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: white;
+
+}
+
+.container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+
+.panel {
+    background-color: white;
+    height: 420px;
+    width: 350px;
+    border-radius: 24px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 36%;
+    width: 100%;
+    background-color: red;
+    z-index: 0;
+    border-radius: 24px 24px 0 0;
+}
+
+.front-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+
+.box {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1;
+}
+
+
+.profile-img {
+    width: 145px;
+    height: 145px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.details {
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, Arial;
+    color: black;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: -6px;
+}
+
+.occupation {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.social-panel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    padding-left: 15px;
+}
+
+.icon {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.action-card {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.action {
+    font-family: Roboto, Arial;
+    background-color: red;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.interact {
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%
+}
+
+.interact-icon {
+    width: 20px;
+    padding-right: 10px;
+    padding-left: 15px;
+
+
+}
+
+.interact-icon-text {
+    border-right: 2px solid rgb(159, 159, 159);
+    font-family: Roboto, Arial;
+    padding-right: 25px;
+}
+
+.interact-icon-text2 {
+    font-family: Roboto, Arial;
+    padding-right: 30px;
+}
+
+.back-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+
+
+.back-up {
+    position: absolute;
+    background-color: white;
+    border-radius: 24px 24px 0px 0px;
+    width: 100%;
+    height: 81.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.watermark1,
+.watermark2 {
+    width: 20%;
+    opacity: 0.25;
+}
+
+.watermark1 {
+    padding-left: 10px;
+}
+
+.watermark2 {
+    padding-top: 4px;
+    padding-right: 10px;
+}
+
+.qr-box {
+    opacity: 0.75;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code {
+    width: 60%;
+}
+
+.back-down {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    height: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    border-radius: 0 0 24px 24px;
+
+}
+
+.language-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    margin: 5px;
+}
+
+.back-bottom-end {
+    background-color: white;
+    border-radius: 24px 24px 0 0;
+}
