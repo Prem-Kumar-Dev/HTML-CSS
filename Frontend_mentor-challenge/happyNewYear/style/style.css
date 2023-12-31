@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url("D:\VSCODE\HTML-CSS\Frontend_mentor-challenge\happyNewYear\image\background.png");
+}
+
+
+.back {
+    width: 100%;
+    height: 100%;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 50px;
+    width: 950px;
+    height: 500px;
+    font-size: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: white;
+    animation: container 2s linear 6.25s forwards;
+}
+.first,.second,.third,.fourth,.new-year {
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: gold; 
+    z-index: 2;
+}
+.first {
+    
+    animation: top 1s cubic-bezier(0.44, 0, 0.2, 1) 4.40s forwards,color 1s cubic-bezier(0.42, 0, 0.58, 1) 5.40s infinite;
+}
+
+.second {
+    
+    animation: top 1s cubic-bezier(0.44, 0, 0.2, 1) 4s forwards,color 1s cubic-bezier(0.42, 0, 0.58, 1) 5.70s infinite;
+}
+
+.third {
+    
+    animation: top 1s cubic-bezier(0.44, 0, 0.2, 1) 3.60s forwards, color 1s cubic-bezier(0.42, 0, 0.58, 1) 6s infinite;
+}
+
+.fourth {
+    color: red;
+    text-shadow: 0 0 40px white;
+    animation: curveMotion 3s ease-out forwards;
+
+}
+.new-year {
+    -webkit-text-stroke-width: 3px; 
+    -webkit-text-stroke-color: white; 
+    color:  gold;
+    opacity: 0;
+    animation: new-year 1s cubic-bezier(0.32, 0.58, 0.57, 1) 3s forwards, new-year-color 1s cubic-bezier(0.42, 0, 0.58, 1) 6.25s infinite;
+}
+@keyframes new-year {
+    50% {
+        transform: translateX(-120%) rotate(-5deg);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-90%) rotate(10deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%) rotate(0);
+        opacity: 1;
+    }
+
+}
+@keyframes curveMotion {
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    
+}
+
+@keyframes top {
+    50% {
+        transform: translateY(-15%) rotate(5deg);
+        
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    
+    }
+}
+
+@keyframes color {
+    0% {
+        text-shadow: 5px 15px 50px gold, 0 0 50px rgb(207, 42, 42);
+    }
+    50% {
+        text-shadow: 5px 15px 50px rgb(207, 42, 42), 0 0 50px gold;
+    }
+    100% {
+        text-shadow: 5px 15px 50px gold, 0 0 50px rgb(207, 42, 42);
+    }
+}
+@keyframes new-year-color {
+    0% {
+        text-shadow: 5px 15px 50px gold, 0 0 50px rgb(207, 42, 42);
+    }
+    50% {
+        text-shadow: 5px 15px 50px rgb(207, 42, 42), 0 0 50px gold;
+    }
+    100% {
+        text-shadow: 5px 15px 50px gold, 0 0 50px rgb(207, 42, 42);
+    }
+}
+
+.happy {
+    color: gold;
+    z-index: 1;
+    position: absolute;
+    font-size: 220px;
+    font-family: 'Lilita One', sans-serif;
+    opacity: 0;
+    animation: happy-new-year 2s linear 6.25s forwards;
+}
+
+@keyframes happy-new-year {
+    50% {
+        transform: translateY(-55%)
+    }
+    100% {
+        transform: translateY(-110%);
+        opacity: 1;
+    }
+}
+@keyframes container {
+    100% {
+        transform: translateY(10%);
+    }
+    
+}
