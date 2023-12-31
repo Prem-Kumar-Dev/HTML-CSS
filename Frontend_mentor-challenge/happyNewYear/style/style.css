@@ -122,12 +122,17 @@ body {
 }
 
 .happy {
+    height: 280px;
+    width: 1600px;
+    background-color: red;
+    display: flex;  
+    flex-wrap: nowrap;
     color: gold;
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     font-size: 220px;
     font-family: 'Lilita One', sans-serif;
-    opacity: 0;
+    opacity: 1;
     animation: happy-new-year 2s linear 6.25s forwards;
 }
 
