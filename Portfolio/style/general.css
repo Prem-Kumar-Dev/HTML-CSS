@@ -42,8 +42,14 @@ body {
 #home {
     color: #00abf0;
 }
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
 .trb {
     transition: all 0.3s ease-in-out;
+ 
 }
 .trb:hover {
     color: #00abf0;
