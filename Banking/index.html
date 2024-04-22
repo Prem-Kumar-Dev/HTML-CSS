@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Banking</title>
+    <link rel="stylesheet" href="style/general.css">
+    <script src="js/general.js"></script> 
+</head>
+
+<body>
+    <div class="circles"></div>
+    <div class="circles"></div>
+    <div class="circles"></div>
+
+    <div class="header">
+        <p class="dashboard">Dashboard</p>
+        <p class="total">Total Balance: <span id="totalBalance">$1000</span></p>
+        <div class="right-section-header">
+            <p class="logout">Logout</p>
+            <img class="profile" src="style/icons/profile.png">
+        </div>
+    </div>
+    <div class="page">
+        <div class="details">
+            <div class="deposit">
+                <div class="text">
+                    <div class="info">Total Deposit</div>
+                    <div class="amount" id="totalDeposit">$100</div>
+                </div>
+                <div class="icon"><img class="img" src="style/icons/deposit.png"></div>
+            </div>
+            <div class="withdraw">
+                <div class="text">
+                    <div class="info">Total Withdraw</div>
+                    <div class="amount" id="totalWithdraw">$100</div>
+                </div>
+                <div class="icon"><img class="img" src="style/icons/withdraw.png"></div>
+            </div>
+            <div class="balance">
+                <div class="text">
+                    <div class="info">Current Balance</div>
+                    <div class="amount" id="currentBalance">$100</div>
+                </div>
+                <div class="icon"><img class="img" src="style/icons/balance.png"></div>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="deposit-box">
+                <div class="info-action">Deposit</div>
+                <div class="text-box"><input type="text" id="depositAmount" class="search-box" placeholder="Amount"></div>
+                <div class="button" onclick="deposit()">Deposit</div>
+            </div>
+            <div class="withdraw-box">
+                <div class="info-action">Withdraw</div>
+                <div class="text-box"><input type="text" id="withdrawAmount" class="search-box" placeholder="Amount"></div>
+                <div class="button" onclick="withdraw()">Withdraw</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

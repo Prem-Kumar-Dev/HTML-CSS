@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(216, 216, 249);
+    margin-top: 0;
+    margin-left: 0;
+    margin-right:0 ;
+    padding-bottom: 1000px;
+}
+.circles {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+        top: 25%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    border: 20px solid rgb(77, 77, 240);
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 0;
+    background: transparent;
+}
+.circles:nth-child(1) {
+    border-color: #f1c40f;
+    top: 75%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    
+}
+.circles:nth-child(2) {
+    border-color: rgb(137, 213, 24);
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    
+
+}
+.header {
+    font-family: Roboto,Arial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.374);
+    border-bottom: 1px none;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius:20px ;
+    position: fixed;
+        top:0px;
+        height: 57px;
+        left: 0px;
+        right: 0px;
+    z-index: 10;
+    
+    
+}
+
+.dashboard {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 75px;
+    font-size: 25px;
+
+}
+.right-section-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logout {
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.page {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    flex-direction: column;
+    
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    
+}
+.deposit {
+    margin-left: 50px;
+}
+.balance {
+    margin-right: 50px;
+}
+
+.deposit,.withdraw,.balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 80px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+}
+
+.deposit .info, .withdraw .info, .balance .info {
+    font-family: Roboto,Arial;
+    font-size: 20px;
+}
+
+.deposit .amount, .withdraw .amount, .balance .amount {
+    font-family: Arial;
+    font-size: 40px;
+
+}
+.details .icon {
+    margin-left: 10px;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.deposit-box, .withdraw-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: white;
+    font-family: Roboto,Arial;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:rgba(0, 0, 255, 0.059);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+}
+
+.deposit-box .info-action, .withdraw-box .info-action {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.deposit-box .search-box, .withdraw-box .search-box {
+    margin-bottom: 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+.deposit-box {
+    margin-left: 250px;
+}
+.withdraw-box {
+    margin-right: 250px;
+}
+
+.deposit-box .search-box , .withdraw-box .search-box{
+    padding-left: 10px;
+    width: 300px;
+    height: 30px;
+    
+}
+
+.deposit-box .button, .withdraw-box .button {
+    background-color: rgb(77, 77, 240);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    width: 93%;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+
+

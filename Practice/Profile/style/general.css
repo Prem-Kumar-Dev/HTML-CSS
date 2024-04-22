@@ -12,6 +12,35 @@ body {
     height: 400px;
     perspective: 1250px;
 }
+.circles {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+        top: 25%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    border: 20px solid rgb(77, 77, 240);
+    border-radius: 50%;
+    box-sizing: border-box;
+    z-index: 0;
+    background: transparent;
+}
+
+.circles:nth-child(1) {
+    border-color: #f1c40f;
+    top: 75%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    
+}
+.circles:nth-child(2) {
+    border-color: rgb(137, 213, 24);
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    
+
+}
 
 .card {
     position: absolute;
