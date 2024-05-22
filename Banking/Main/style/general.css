@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.374);
+    background-color: none;
     border-bottom: 1px none;
     border-bottom-left-radius:20px ;
     border-bottom-right-radius:20px ;
