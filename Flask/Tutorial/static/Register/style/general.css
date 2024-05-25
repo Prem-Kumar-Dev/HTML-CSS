@@ -1,0 +1,102 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.fade-in {
+    opacity: 1;
+}
+
+.container{
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.register{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:rgb(255, 199, 94);
+    border-radius: 10px 0 0 ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.register h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.register img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px 10px 20px 10px;
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    padding: 0 10px;
+    border: solid 1px darkblue;
+    border-radius: 5px;
+    outline: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,0.5);
+    margin-top: 30px;
+}
+.button:active{
+    box-shadow: none;
+    background: blueviolet;
+}
+
+.img {
+    width: 280px;
+    height:280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 5px solid orange;
+    margin-right: 45px;
+}
+
+.img img {
+    max-width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+
+}
+input{
+    width: 65%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+

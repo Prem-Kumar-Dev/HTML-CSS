@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Cover</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='Cover/style/general.css') }}">
+
+    </head>
+
+    <body>
+        <div class="bar">
+            <div class="logo">
+                <img src="{{ url_for('static',filename='Cover/style/icons/icon.png') }}" alt="logo" class="logo">
+            </div>
+            <div class="right-section">
+                <div class="about">About Us</div>
+                <div class="FAQ">FAQ</div>
+                <div class="contact">Contact Us</div>
+                <div class="admin-login">Admin</div>
+            </div>
+        </div>
+
+        <div class="background">
+            <img src="{{ url_for('static',filename='Cover/style/icons/bg.jpeg') }}" alt="bg" class="bg">
+        </div>
+
+        <div class="contant">
+            <div class="info">
+                <h class="text">Online Banking</h>
+                <div class="buttons">
+                        <div class="button1" onclick="location.href='{{ url_for('register') }}';">Sign Up</div>
+                        <div class="button2" onclick="location.href='{{ url_for('login') }}';">Login</div>
+                    
+                </div>
+                
+            </div>
+            <div class="img">
+                <img src="{{ url_for('static',filename='Cover/style/icons/bgim.jpeg') }}" alt="bgim" class="bgim">
+            </div>
+        </div>
+
+        <script>
+            function navigateWithFade(url) {
+                document.body.classList.remove('fade-in');
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 500);
+            }
+    
+            window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.add('fade-in');
+            });
+        </script>
+            
+
+    </body>
+
+</html>
