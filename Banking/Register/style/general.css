@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -8,7 +8,7 @@ body{
     height: 100vh;
 }
 
-.container{
+.container {
     width: 50%;
     height: 80vh;
     display: flex;
@@ -18,28 +18,29 @@ body{
     overflow: hidden;
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
 }
-.register{
+
+.register {
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background:rgb(255, 199, 94);
-    border-radius: 10px 0 0 ;
+    background: rgb(255, 199, 94);
+    border-radius: 10px 0 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-.register h1{
+
+.register h1 {
     font-size: 40px;
     margin: 10px 0;
 }
 
-.register img{
+.register img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin: 10px 10px 20px 10px;
-
 }
 
 .button {
@@ -58,14 +59,15 @@ body{
     box-shadow: 2.5px 2.5px 2.5px rgba(0,0,0,0.5);
     margin-top: 30px;
 }
-.button:active{
+
+.button:active {
     box-shadow: none;
     background: blueviolet;
 }
 
 .img {
     width: 280px;
-    height:280px;
+    height: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,21 +81,20 @@ body{
     max-width: 250px;
     object-fit: cover;
     border-radius: 50%;
-    
-
 }
-form{
+
+form {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     border-radius: 0 10px 10px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-input{
+
+input {
     width: 65%;
     height: 40px;
     margin: 10px 0;
@@ -104,4 +105,40 @@ input{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Media Queries */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        padding: 10px;
+    }
 
+    .register {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .register h1 {
+        font-size: 30px;
+    }
+
+    .button {
+        width: 60px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img img {
+        max-width: 180px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
